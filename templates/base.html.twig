@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Healthone{% endblock %}</title>
+        <link rel="stylesheet" href="{{ asset('css/base.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/bootstrap-grid.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/bootstrap-reboot.css') }}">
+        <script src="{{ asset('js/bootstrap.js') }}"></script>
+        <script src="{{ asset('js/bootstrap.bundle.js') }}"></script>
+        {% block stylesheets %}
+
+        {% endblock %}
+    </head>
+    <body>
+        <header>
+                <h1 id="HealthOne" class="text-center">HealthOne<img src="{{ asset('img/logo.jpg') }}"  width="80px" height="50px"  alt="logo">
+                    <button class="btn btn-outline-primary float-right" type="submit" id="login">Login</button>
+                </h1>
+
+        </header>
+
+        <div class="navimg">
+            <img src="{{ asset('img/nav.jpg') }}" alt="nav.img" class="text-center">
+        </div>
+
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <a class="navbar-brand" href="{{ path("homepage") }}"><img src="{{ asset('img/home.png') }}" width="50px" height="50px" alt="home.jpg"></a>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Over ons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path("mtable") }}">Medicijnen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        {% block body %}
+        {% endblock %}
+        {% block javascripts %}
+
+        {% endblock %}
+    </body>
+</html>
