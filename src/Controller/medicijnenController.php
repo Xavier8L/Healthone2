@@ -57,7 +57,7 @@ class medicijnenController extends AbstractController
     }
 
     /**
-     * @Route("medewerker/update/(id)", name="updateM")
+     * @Route("medewerker/update/{id}", name="updateM")
      */
     public function updateM($id, Request $request)
     {
@@ -79,7 +79,7 @@ class medicijnenController extends AbstractController
     }
 
     /**
-     * @Route("medewerker/delet/(id)", name="deletM")
+     * @Route("medewerker/delet/{id}", name="deletM")
      */
     public function deleteAction($id)
     {
