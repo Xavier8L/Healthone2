@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <h1 class="text-info text-center">Medicijnen List</h1>
+    <h2>Er zij {{ medicijnen|length }} medicijnen</h2>
+
+    <table class="table table-bordered">
+
+        <thead class="text-center">
+        <tr>
+            <td class="thead">naam</td>
+            <td class="thead">werking</td>
+            <td class="thead">bijwerking</td>
+            <td class="thead">prijs</td>
+            <td class="thead">verzekerd</td>
+        </tr>
+        </thead>
+        <tbody>
+        {% for medicijn in medicijnen %}
+            <tr class="text-center tr2">
+                <td>
+                    {{ medicijn.naam }}
+                </td>
+
+                <td>
+                    {{  medicijn.werking }}
+                </td>
+
+                <td>
+                    {{  medicijn.bijwerking }}
+                </td>
+
+                <td>
+                    € {{ medicijn.prijs }}
+                </td>
+
+                <td>
+                    {% if medicijn.verzekerd == true %}
+                        verzekerd
+                       {% else %}
+                     niet verzekerd
+                    {% endif %}
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

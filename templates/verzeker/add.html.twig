@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <header class="text-center" >
+        <h1 class="text-info">Add Medicijnen</h1>
+    </header>
+<div class="form1">
+    {{ form_start(MedicijnForm) }}
+        {{ form_widget(MedicijnForm) }}
+    <button type="submit" class="btn btn-outline-info" id="create">create</button>
+    {{ form_end(MedicijnForm) }}
+</div>
+{% endblock %}

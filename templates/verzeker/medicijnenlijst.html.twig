@@ -1,0 +1,58 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <h1 class="text-info text-center">Medicijnen List</h1>
+    <h2>Er zij {{ medicijnen|length }} medicijnen</h2>
+
+    <table class="table table-bordered">
+
+        <thead class="text-center">
+        <tr>
+            <td class="thead">naam</td>
+            <td class="thead">werking</td>
+            <td class="thead">bijwerking</td>
+            <td class="thead">prijs</td>
+            <td class="thead">verzekerd</td>
+            <td class="thead">Wijzigen</td>
+            <td class="thead">Verwijderen</td>
+        </tr>
+        </thead>
+        <tbody>
+        {% for medicijn in medicijnen %}
+            <tr class="text-center tr2">
+                <td>
+                    {{ medicijn.naam }}
+                </td>
+
+                <td>
+                    {{ medicijn.werking|length>50 ? medicijn.werking|slice(0,50) ~ '...' : medicijn.werking }}
+                </td>
+
+                <td>
+                    {{ medicijn.bijwerking|length>50 ? medicijn.bijwerking|slice(0,50) ~ '...' : medicijn.bijwerking }}
+                </td>
+
+                <td>
+                    € {{ medicijn.prijs }}
+                </td>
+
+                <td>
+                    {% if medicijn.verzekerd == true %}
+                        verzekerd
+                    {% else %}
+                        niet verzekerd
+                    {% endif %}
+                </td>
+                <td title="bewerk de gegevens van deze medicijn">
+                    <a href="{{ path('updateM',{'id':medicijn.id}) }}"><img src="{{ asset('img/plus.png') }}" class="btn btn-outline-info" width="100px" height="100px"></a>
+                </td>
+
+                <td title="bewerk de gegevens van deze medicijn">
+                    <a href="{{ path('deletM', {'id':medicijn.id}) }}"><img src="{{ asset('img/verwijden.png') }}" class="btn btn-outline-danger" width="100px" height="100px"></a>
+                </td>
+
+            </tr>
+        {% endfor %}
+        <a href="{{ path("creatM") }}"  ><button type='submit' class='btn btn-outline-warning' >toevoegen</button></a>
+        </tbody>
+    </table>
+{% endblock %}
