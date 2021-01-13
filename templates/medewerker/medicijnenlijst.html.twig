@@ -3,6 +3,24 @@
     <h1 class="text-info text-center">Medicijnen List</h1>
     <h2>Er zij {{ medicijnen|length }} medicijnen</h2>
 
+    {% for message in app.flashes('success') %}
+        <dis class="alert alert-success">
+            {{ message }}
+        </dis>
+
+
+    {% endfor %}
+
+
+    {% for message in app.flashes('danger') %}
+        <dis class="alert alert-danger">
+            {{ message }}
+        </dis>
+
+
+    {% endfor %}
+    <br />
+
     <table class="table table-bordered">
 
         <thead class="text-center">
@@ -43,11 +61,11 @@
                     {% endif %}
                 </td>
                 <td title="bewerk de gegevens van deze medicijn">
-                    <a href="{{ path('updateM',{'id':medicijn.id}) }}"><img src="{{ asset('img/plus.png') }}" class="btn btn-outline-info" width="100px" height="100px"></a>
+                    <a href="{{ path('updateM',{'id':medicijn.id}) }}"><img src="{{ asset('img/plus.png') }}" class="btn-outline-info" width="100px" height="100px"></a>
                 </td>
 
                 <td title="bewerk de gegevens van deze medicijn">
-                    <a href="{{ path('deletM', {'id':medicijn.id}) }}"><img src="{{ asset('img/verwijden.png') }}" class="btn btn-outline-danger" width="100px" height="100px"></a>
+                    <a href="{{ path('deletM', {'id':medicijn.id}) }}"><img src="{{ asset('img/verwijden.png') }}" class="btn-outline-danger" width="100px" height="100px"></a>
                 </td>
 
             </tr>

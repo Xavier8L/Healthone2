@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff7d3df1-a52c-4103-99dd-bda82c4ce6d7" name="Default Changelist" comment="" />
+    <list default="true" id="ff7d3df1-a52c-4103-99dd-bda82c4ce6d7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/homeController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/medicijnenController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Medicijnen.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Medicijnen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/MedicijnType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/MedicijnType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Nomal/home.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Nomal/medicijnen.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/verzeker/add.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/verzeker/medicijnenlijst.html.twig" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +38,9 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -118,6 +149,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1lSbh35nveAfM7GZFKQmC7qdOTN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -125,21 +157,23 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/bezoeker" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sheng\Documents\Xampp\htdocs\healthone2\templates\bezoeker" />
+      <recent name="C:\Users\sheng\Documents\Xampp\htdocs\healthone2\templates\medewerker" />
+      <recent name="C:\Users\sheng\Documents\Xampp\htdocs\healthone2\templates\img" />
+      <recent name="C:\Users\sheng\Documents\Xampp\htdocs\healthone2\templates" />
+      <recent name="C:\Users\sheng\Documents\Xampp\htdocs\healthone2\templates\Nomal" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\sheng\Documents\Xampp\htdocs\healthone2\public" />
       <recent name="C:\Users\sheng\Documents\Xampp\htdocs\healthone2\templates\verzeker" />
       <recent name="C:\Users\sheng\Documents\Xampp\htdocs\healthone2\src\Controller" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\sheng\Documents\Xampp\htdocs\healthone2\templates\img" />
-      <recent name="C:\Users\sheng\Documents\Xampp\htdocs\healthone2\templates" />
-      <recent name="C:\Users\sheng\Documents\Xampp\htdocs\healthone2\templates\Nomal" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -160,25 +194,46 @@
       <workItem from="1609961463214" duration="2315000" />
       <workItem from="1610008618440" duration="7572000" />
       <workItem from="1610288960348" duration="18552000" />
+      <workItem from="1610543790650" duration="1179000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="661" y="11" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1609758399820">
+    <state x="703" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610364610957">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="661" y="11" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609758399820" />
+    <state x="703" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1610364610957" />
+    <state x="661" y="11" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1610365857494">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="661" y="11" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610365857494" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1610289374535">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1610289374535" />
-    <state x="776" y="443" key="NewPhpFileDialog" timestamp="1609761095102">
+    <state x="648" y="240" key="NewPhpClassDialog" timestamp="1610364627945">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="776" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609761095102" />
+    <state x="648" y="240" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610364627945" />
+    <state x="776" y="443" key="NewPhpFileDialog" timestamp="1610364859825">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="776" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610364859825" />
     <state x="365" y="173" key="SettingsEditor" timestamp="1607946412133">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

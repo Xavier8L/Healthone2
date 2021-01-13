@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    {% block content_title %}
+
+        {% endblock %}
+    <div class="form1">
+        {{ form_start(MedicijnForm) }}
+        {{ form_widget(MedicijnForm) }}
+        {% block content_body %}
+
+        {%  endblock %}
+        {{ form_end(MedicijnForm) }}
+    </div>
+{% endblock %}

@@ -1,0 +1,7 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+   {{ form_start(DoctorForm) }}
+   {{ form_widget(DoctorForm) }}
+   <button type="submit" class="btn btn-outline-info" id="create">create</button>
+   {{ form_end(DoctorForm) }}
+{% endblock %}
