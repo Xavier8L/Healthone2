@@ -2,25 +2,25 @@
 
 namespace App\Repository;
 
-use App\Entity\Recept;
+use App\Entity\Recepten;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
- * @method Recept|null find($id, $lockMode = null, $lockVersion = null)
- * @method Recept|null findOneBy(array $criteria, array $orderBy = null)
- * @method Recept[]    findAll()
- * @method Recept[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ * @method Recepten|null find($id, $lockMode = null, $lockVersion = null)
+ * @method Recepten|null findOneBy(array $criteria, array $orderBy = null)
+ * @method Recepten[]    findAll()
+ * @method Recepten[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
 class ReceptRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {
-        parent::__construct($registry, Recept::class);
+        parent::__construct($registry, Recepten::class);
     }
 
     // /**
-    //  * @return Recept[] Returns an array of Recept objects
+    //  * @return Recepten[] Returns an array of Recepten objects
     //  */
     /*
     public function findByExampleField($value)
@@ -37,7 +37,7 @@ class ReceptRepository extends ServiceEntityRepository
     */
 
     /*
-    public function findOneBySomeField($value): ?Recept
+    public function findOneBySomeField($value): ?Recepten
     {
         return $this->createQueryBuilder('r')
             ->andWhere('r.exampleField = :val')

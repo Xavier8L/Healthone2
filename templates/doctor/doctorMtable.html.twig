@@ -1,0 +1,66 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <h1 class="text-info text-center">Medicijnen Lijst</h1>
+
+    {% for message in app.flashes('success') %}
+
+        <dis class="alert alert-success">
+            {{ message }}
+        </dis>
+
+
+    {% endfor %}
+
+
+    {% for message in app.flashes('danger') %}
+        <dis class="alert alert-danger">
+            {{ message }}
+        </dis>
+
+
+    {% endfor %}
+    <br />
+    <div class="container">
+    <table class="table table-bordered">
+
+        <thead class="text-center">
+        <tr>
+            <td class="thead">naam</td>
+            <td class="thead">datum</td>
+            <td class="thead">periode</td>
+            <td class="thead">Wijzigen</td>
+            <td class="thead">Verwijderen</td>
+        </tr>
+        </thead>
+        <tbody>
+        {% for recept in recepten %}
+            <tr class="text-center tr2">
+                <td>
+                    {{ recept.medicijn.naam }}
+                </td>
+
+                <td>
+                    {{ recept.datum|date }}
+                </td>
+
+                <td>
+                    {{ recept.periode }}
+                </td>
+
+                <td title="bewerk de gegevens van deze medicijn">
+                    <a href="{{ path('updateDM',{'id':recept.id}) }}"><img src="{{ asset('img/plus.png') }}" class="btn-outline-info" width="100px" height="100px"></a>
+                </td>
+
+                <td title="bewerk de gegevens van deze medicijn">
+                    <a href="{{ path('deletDM', {'id':recept.id}) }}"><img src="{{ asset('img/verwijden.png') }}" class="btn-outline-danger" width="100px" height="100px"></a>
+                </td>
+
+            </tr>
+        {% endfor %}
+
+        </tbody>
+
+    </table>
+        <a href="{{ path("creatDM") }}"  ><button type='submit' class='btn btn-outline-warning' >toevoegen</button></a>
+    </div>
+{% endblock %}

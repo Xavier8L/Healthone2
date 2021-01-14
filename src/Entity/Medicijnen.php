@@ -45,7 +45,7 @@ class Medicijnen
     private $prijs;
 
     /**
-     * @ORM\OneToMany(targetEntity=Recept::class, mappedBy="medicijn")
+     * @ORM\OneToMany(targetEntity=Recepten::class, mappedBy="medicijn")
      */
     private $recepts;
 
@@ -120,14 +120,14 @@ class Medicijnen
     }
 
     /**
-     * @return Collection|Recept[]
+     * @return Collection|Recepten[]
      */
     public function getRecepts(): Collection
     {
         return $this->recepts;
     }
 
-    public function addRecept(Recept $recept): self
+    public function addRecept(Recepten $recept): self
     {
         if (!$this->recepts->contains($recept)) {
             $this->recepts[] = $recept;
@@ -137,7 +137,7 @@ class Medicijnen
         return $this;
     }
 
-    public function removeRecept(Recept $recept): self
+    public function removeRecept(Recepten $recept): self
     {
         if ($this->recepts->removeElement($recept)) {
             // set the owning side to null (unless already changed)

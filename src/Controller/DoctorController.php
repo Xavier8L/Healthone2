@@ -2,7 +2,7 @@
 
 namespace App\Controller;
 
-use App\Entity\Recept;
+use App\Entity\Recepten;
 use App\Entity\Medicijnen;
 use App\Form\MedicijnType;
 use App\Form\ReceptType;
@@ -19,7 +19,7 @@ class DoctorController extends AbstractController
      */
     public function creat(EntityManagerInterface $em, Request $request)
     {
-        $recept = new Recept();
+        $recept = new Recepten();
         $form = $this->createForm(ReceptType::class, $recept);
 
         $form->handleRequest($request);
@@ -32,7 +32,57 @@ class DoctorController extends AbstractController
             return $this->redirectToRoute("Doctormtable");
         }
 
-        return $this->render('doctor/doctorM.html.twig',['DoctorForm'=>$form->createView()]);
+        return $this->render('doctor/doctorCreat.html.twig',['DoctorForm'=>$form->createView()]);
+    }
+
+    /**
+     * @Route("/doctor", name="Doctormtable")
+     */
+
+    public function DoctorMtable()
+    {
+        $repository =$this->getDoctrine()->getRepository(Recepten::class);
+        $recepten =$repository->findAll();
+        return $this->render('doctor/doctorMtable.html.twig',['recepten'=> $recepten]);
+    }
+
+    /**
+     * @Route("doctor/update/{id}", name="updateDM")
+     */
+    public function updateD($id, Request $request)
+    {
+        $recept=$this->getDoctrine()->getRepository(Recepten::class)->find($id);
+        $form = $this->createForm(ReceptType::class, $recept);
+        $form->handleRequest($request);
+        if($form->isSubmitted()&&$form->isValid())
+        {
+            $em =$this->getDoctrine()->getManager();
+            $em->persist($recept);
+            $em->flush();
+
+            $this->addFlash('success',"Medicijn is update");
+
+            return $this->redirectToRoute("Doctormtable");
+        }
+
+        return $this->render('doctor/Dtoevoege.html.twig',['DoctorForm'=>$form->createView()]);
+
+    }
+
+    /**
+     * @Route("doctoe/delet/{id}", name="deletDM")
+     */
+    public function deleteD($id)
+    {
+        $em=$this->getDoctrine()->getManager();
+        $recept=$this->getDoctrine()->getRepository(Recepten::class)->find($id);
+        $em->remove($recept);
+        $em->flush();
+
+        $this->addFlash('danger',"Medicijn is verwijden");
+
+
+        return $this->redirectToRoute("Doctormtable");
     }
 
 

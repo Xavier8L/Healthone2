@@ -17,7 +17,7 @@ class MedicijnType extends AbstractType
             ->add('bijwerking')
             ->add('verzekerd')
             ->add('prijs')
-            ->add('recepts')
+
         ;
     }
 
