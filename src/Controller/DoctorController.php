@@ -32,7 +32,7 @@ class DoctorController extends AbstractController
             return $this->redirectToRoute("Doctormtable");
         }
 
-        return $this->render('doctor/doctorCreat.html.twig',['DoctorForm'=>$form->createView()]);
+        return $this->render('doctor/doctorCreate.html.twig',['DoctorForm'=>$form->createView()]);
     }
 
     /**
@@ -65,7 +65,7 @@ class DoctorController extends AbstractController
             return $this->redirectToRoute("Doctormtable");
         }
 
-        return $this->render('doctor/Dtoevoege.html.twig',['DoctorForm'=>$form->createView()]);
+        return $this->render('doctor/Dwijzigen.html.twig',['DoctorForm'=>$form->createView()]);
 
     }
 

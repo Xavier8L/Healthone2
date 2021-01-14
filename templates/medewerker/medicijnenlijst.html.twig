@@ -1,25 +1,11 @@
 {% extends 'base.html.twig' %}
 {% block body %}
-    <h1 class="text-info text-center">Medicijnen Lijst</h1>
-    <h2>Er zij {{ medicijnen|length }} medicijnen</h2>
-
-    {% for message in app.flashes('success') %}
-        <dis class="alert alert-success">
-            {{ message }}
-        </dis>
-
-
-    {% endfor %}
-
-
-    {% for message in app.flashes('danger') %}
-        <dis class="alert alert-danger">
-            {{ message }}
-        </dis>
-
-
-    {% endfor %}
     <br />
+    <h1 class="text-info text-center">Medicijnen Lijst</h1>
+    <div class="container"><h2>Er zij {{ medicijnen|length }} medicijnen</h2></div>
+
+
+    <div class="container">
 
     <table class="table table-bordered">
 
@@ -70,7 +56,12 @@
 
             </tr>
         {% endfor %}
-        <a href="{{ path("creatM") }}"  ><button type='submit' class='btn btn-outline-warning' >toevoegen</button></a>
+
         </tbody>
+
     </table>
+        <a href="{{ path("creatM") }}"  ><button type='submit' class='btn btn-outline-warning' >toevoegen</button></a>
+    </div>
+
+
 {% endblock %}

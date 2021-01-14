@@ -20,21 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff7d3df1-a52c-4103-99dd-bda82c4ce6d7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/doctor/Dtoevoege.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/doctor/doctorMtable.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/doctor/doctorform.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/base.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/DoctorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DoctorController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Medicijnen.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Medicijnen.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Recept.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Recepten.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/MedicijnType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/MedicijnType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MedewerkerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MedewerkerController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Form/ReceptType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ReceptType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/ReceptRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ReceptRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/doctor/doctorM.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/doctor/doctorCreat.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/medewerker/form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/medewerker/add.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/medewerker/add.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/doctor/Dtoevoege.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/doctor/Dwijzigen.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/doctor/doctorCreat.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/doctor/doctorCreate.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/doctor/doctorMtable.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/doctor/doctorMtable.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/medewerker/add.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/medewerker/create.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/medewerker/medicijnenlijst.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/medewerker/medicijnenlijst.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/medewerker/toevoege.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/medewerker/toevoege.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/medewerker/toevoege.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/medewerker/wijzigen.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +200,7 @@
       <workItem from="1610008618440" duration="7572000" />
       <workItem from="1610288960348" duration="18552000" />
       <workItem from="1610543790650" duration="8213000" />
-      <workItem from="1610613793063" duration="2638000" />
+      <workItem from="1610613793063" duration="5383000" />
     </task>
     <servers />
   </component>

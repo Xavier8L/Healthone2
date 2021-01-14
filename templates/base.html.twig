@@ -42,6 +42,25 @@
             </div>
         </nav>
 
+        <br />
+
+        {% for message in app.flashes('success') %}
+            <dis class="alert alert-success message">
+                {{ message }}
+            </dis>
+
+
+        {% endfor %}
+
+
+        {% for message in app.flashes('danger') %}
+            <dis class="alert alert-danger message">
+                {{ message }}
+            </dis>
+
+
+        {% endfor %}
+
         {% block body %}
         {% endblock %}
         {% block javascripts %}

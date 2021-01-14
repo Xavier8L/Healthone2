@@ -42,7 +42,7 @@ class MedewerkerController extends AbstractController
             return $this->redirectToRoute("medewerkermtable");
         }
 
-        return $this->render('medewerker/add.html.twig',['MedicijnForm'=>$form->createView()]);
+        return $this->render('medewerker/create.html.twig',['MedicijnForm'=>$form->createView()]);
     }
 
     /**
@@ -64,7 +64,7 @@ class MedewerkerController extends AbstractController
             return $this->redirectToRoute("medewerkermtable");
         }
 
-        return $this->render('medewerker/toevoege.html.twig',['MedicijnForm'=>$form->createView()]);
+        return $this->render('medewerker/wijzigen.html.twig',['MedicijnForm'=>$form->createView()]);
 
     }
 
