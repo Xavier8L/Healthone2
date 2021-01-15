@@ -23,10 +23,6 @@ class ReceptType extends AbstractType
                 'class' => Medicijnen::class,
                 'choice_label' => 'naam'
                 ])
-            ->add('medicijn', EntityType::class,[
-                'class' => Medicijnen::class,
-                'choice_label' => 'verzekerd'
-            ])
         ;
     }
 
