@@ -21,8 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ff7d3df1-a52c-4103-99dd-bda82c4ce6d7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Form/ReceptType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ReceptType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/doctor/doctorMtable.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/doctor/doctorMtable.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bezoeker/medicijnen.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bezoeker/medicijnen.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +193,8 @@
       <workItem from="1610288960348" duration="18552000" />
       <workItem from="1610543790650" duration="8213000" />
       <workItem from="1610613793063" duration="5459000" />
-      <workItem from="1610720905725" duration="637000" />
+      <workItem from="1610720905725" duration="2562000" />
+      <workItem from="1610959251581" duration="10409000" />
     </task>
     <servers />
   </component>
@@ -236,5 +238,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="365" y="173" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607946412133" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1610973298331">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1610973298331" />
   </component>
 </project>

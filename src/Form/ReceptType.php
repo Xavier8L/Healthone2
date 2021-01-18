@@ -23,6 +23,7 @@ class ReceptType extends AbstractType
                 'class' => Medicijnen::class,
                 'choice_label' => 'naam'
                 ])
+
         ;
     }
 
