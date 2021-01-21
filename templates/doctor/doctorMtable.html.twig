@@ -1,12 +1,14 @@
-{% extends 'base.html.twig' %}
+
+{% extends 'doctor/Dhome.html.twig' %}
+
 {% block body %}
     <h1 class="text-info text-center">Medicijnen Lijst</h1>
 
     {% for message in app.flashes('success') %}
 
-        <dis class="alert alert-success">
+        <dib class="alert alert-success">
             {{ message }}
-        </dis>
+        </dib>
 
 
     {% endfor %}

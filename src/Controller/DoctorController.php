@@ -14,6 +14,15 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class DoctorController extends AbstractController
 {
+
+    /**
+     * @Route("/doctor", name="Dhomepage")
+     */
+    public function homepage()
+    {
+        return $this ->render('doctor/Dhome.html.twig');
+    }
+
     /**
      * @Route("/doctor/creat", name="creatDM")
      */
@@ -36,7 +45,7 @@ class DoctorController extends AbstractController
     }
 
     /**
-     * @Route("/doctor", name="Doctormtable")
+     * @Route("/doctor/medicijnen", name="Doctormtable")
      */
 
     public function DoctorMtable()

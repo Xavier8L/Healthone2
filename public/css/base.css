@@ -52,3 +52,8 @@ body
     height: 80px;
     font-size: 30px;
 }
+
+#login
+{
+    margin-bottom: 10px;
+}

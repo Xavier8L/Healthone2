@@ -13,8 +13,18 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class MedewerkerController extends AbstractController
 {
+
     /**
-     * @Route("/medewerker", name="medewerkermtable")
+     * @Route("/medewerker", name="Mhomepage")
+     */
+    public function homepage()
+    {
+        return $this ->render('medewerker/Mhome.html.twig');
+    }
+
+
+    /**
+     * @Route("/medewerker/medicijnen", name="medewerkermtable")
      */
     public function MedicijnenTable()
     {

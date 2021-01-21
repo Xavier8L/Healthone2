@@ -103,11 +103,11 @@ class LoginFormAuthenticator extends AbstractFormLoginAuthenticator implements P
 
         if($this->authorizationchecker->isGranted('ROLE_MEDEWERKER'))
         {
-            return new RedirectResponse($this->urlGenerator->generate('medewerkermtable'));
+            return new RedirectResponse($this->urlGenerator->generate('Mhomepage'));
         }
         if($this->authorizationchecker->isGranted('ROLE_DOCTOR'))
         {
-            return new RedirectResponse($this->urlGenerator->generate('Doctormtable'));
+            return new RedirectResponse($this->urlGenerator->generate('Dhomepage'));
         }
 
         // For example : return new RedirectResponse($this->urlGenerator->generate('some_route'));
