@@ -48,11 +48,11 @@
                     {% endif %}
                 </td>
                 <td title="bewerk de gegevens van deze medicijn">
-                    <a href="{{ path('updateM',{'id':medicijn.id}) }}"><img src="{{ asset('img/plus.png') }}" class="btn-outline-info" width="100px" height="100px"></a>
+                    <a href="{{ path('updateM',{'id':medicijn.id}) }}"><span class="far fa-pen text-info " style="font-size: 50px" ></span></a>
                 </td>
 
                 <td title="bewerk de gegevens van deze medicijn">
-                    <a href="{{ path('deletM', {'id':medicijn.id}) }}"><img src="{{ asset('img/verwijden.png') }}" class="btn-outline-danger" width="100px" height="100px"></a>
+                    <a href="{{ path('deletM', {'id':medicijn.id}) }}"><span class="far fa-trash-alt text-danger " style="font-size: 50px" ></span></a>
                 </td>
 
             </tr>
@@ -61,8 +61,9 @@
         </tbody>
 
     </table>
-        <a href="{{ path("creatM") }}"  ><button type='submit' class='btn btn-outline-warning' >toevoegen</button></a>
+        <a href="{{ path("creatM") }}"  ><button class="btn btn-outline-warning  "><span class="far fa-plus text-warning " style="font-size: 50px"></span></button></a>
     </div>
+    <br/>
 
 
 {% endblock %}

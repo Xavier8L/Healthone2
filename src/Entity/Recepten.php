@@ -33,6 +33,11 @@ class Recepten
      */
     private $medicijn;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=Patienten::class, inversedBy="receptens")
+     */
+    private $patient;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -71,6 +76,18 @@ class Recepten
     public function setMedicijn(?Medicijnen $medicijn): self
     {
         $this->medicijn = $medicijn;
+
+        return $this;
+    }
+
+    public function getPatient(): ?Patienten
+    {
+        return $this->patient;
+    }
+
+    public function setPatient(?Patienten $patient): self
+    {
+        $this->patient = $patient;
 
         return $this;
     }

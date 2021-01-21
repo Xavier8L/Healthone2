@@ -2,7 +2,7 @@
 {% extends 'doctor/Dhome.html.twig' %}
 
 {% block body %}
-    <h1 class="text-info text-center">Medicijnen Lijst</h1>
+    <h1 class="text-info text-center">Recepten Lijst</h1>
 
     {% for message in app.flashes('success') %}
 
@@ -27,10 +27,11 @@
 
         <thead class="text-center">
         <tr>
-            <td class="thead">naam</td>
+            <td class="thead">medicijn</td>
             <td class="thead">datum</td>
             <td class="thead">periode</td>
             <td class="thead">verzekerd</td>
+            <td class="thead">patient</td>
             <td class="thead">Wijzigen</td>
             <td class="thead">Verwijderen</td>
         </tr>
@@ -58,12 +59,16 @@
                     {% endif %}
                 </td>
 
-                <td title="bewerk de gegevens van deze medicijn">
-                    <a href="{{ path('updateDM',{'id':recept.id}) }}"><img src="{{ asset('img/plus.png') }}" class="btn-outline-info" width="100px" height="100px"></a>
+                <td>
+                    {{ recept.patient.naam }}
                 </td>
 
                 <td title="bewerk de gegevens van deze medicijn">
-                    <a href="{{ path('deletDM', {'id':recept.id}) }}"><img src="{{ asset('img/verwijden.png') }}" class="btn-outline-danger" width="100px" height="100px"></a>
+                    <a href="{{ path('updateDM',{'id':recept.id}) }}"><span class="far fa-pen text-info " style="font-size: 50px" ></span></a>
+                </td>
+
+                <td title="bewerk de gegevens van deze medicijn">
+                    <a href="{{ path('deletDM', {'id':recept.id}) }}"><span class="far fa-trash-alt text-danger " style="font-size: 50px"></span></a>
                 </td>
 
             </tr>
@@ -72,6 +77,6 @@
         </tbody>
 
     </table>
-        <a href="{{ path("creatDM") }}"  ><button type='submit' class='btn btn-outline-warning' >toevoegen</button></a>
+        <a href="{{ path("creatDM") }}"  ><button class="btn btn-outline-warning  "><span class="far fa-plus text-warning " style="font-size: 50px"></span></button></a>
     </div>
 {% endblock %}

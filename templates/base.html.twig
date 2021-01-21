@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
         <link rel="stylesheet" href="{{ asset('css/bootstrap-grid.css') }}">
         <link rel="stylesheet" href="{{ asset('css/bootstrap-reboot.css') }}">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="{{ asset('js/bootstrap.js') }}"></script>
         <script src="{{ asset('js/bootstrap.bundle.js') }}"></script>
@@ -27,7 +28,7 @@
         </div>
 
         <nav class="navbar navbar-expand-lg  bg-dark navbar-dark">
-            {% block a %}<a class="navbar-brand" href="{{ path("homepage") }}"><img src="{{ asset('img/home.png') }}" width="50px" height="50px" alt="home.jpg"></a>{% endblock %}
+            {% block a %}<a class="navbar-brand" href="{{ path("homepage") }}"><i class="fas fa-home" style="font-size: 50px"></i></a>{% endblock %}
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
