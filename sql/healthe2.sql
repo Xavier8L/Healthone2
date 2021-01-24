@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 22 jan 2021 om 19:57
+-- Gegenereerd op: 24 jan 2021 om 18:01
 -- Serverversie: 10.4.14-MariaDB
 -- PHP-versie: 7.4.11
 
@@ -66,7 +66,7 @@ CREATE TABLE `medicijnen` (
 --
 
 INSERT INTO `medicijnen` (`id`, `naam`, `werking`, `bijwerking`, `verzekerd`, `prijs`) VALUES
-(1, 'pa', 'warm', 'moe', 1, 150),
+(1, 'paracetamol', 'Paracetamol is een pijnstiller. Het verlaagt ook koorts.', 'moe', 1, 30),
 (2, 'Viread', 'Het virus dat hiv veroorzaakt stimuleert onze lichaamscellen om nieuwe hiv-virussen aan te maken. Daarvoor is het enzym reverse-transcriptase nodig. Tenofovir disoproxil remt dit enzym en voorkomt zo dat nieuwe virussen worden gemaakt. Tenofovir disoproxil kan het virus niet volledig laten verdwijnen. Wel kan het de hoeveelheid virus in het bloed drastisch verlagen. Hierdoor neemt het aantal witte bloedcellen toe en komt de afweer weer op peil. Omdat het virus snel geneigd is ongevoelig (resistent) te worden, kan het alleen in combinatie met andere hiv-remmers worden toegepast.', 'Soms (bij 10 tot 30 op de 100 mensen)\r\n\r\nMaagdarmklachten, zoals misselijkheid, braken, diarree, zelden buikpijn en winderigheid. Raadpleeg uw arts als u hier last van blijft houden.\r\nDuizeligheid. Raadpleeg uw arts als u hier last van blijft houden.\r\nSlap gevoel.\r\nZwakkere botten en botpijn door botontkalking (osteoporose). U heeft dan meer kans op een botbreuk. Dit ontstaat door een gebrek aan fosfaat in het bloed. Door extra fosfaat te gebruiken (in een voedingssupplement) is deze bijwerking te verminderen.\r\nHuiduitslag. Huiduitslag kan door overgevoeligheid komen maar dat hoeft niet (zie Zeer zelden: overgevoeligheid).\r\nBij mensen die daarvoor gevoelig zijn, kunnen verschijnselen van diabetes (suikerziekte) ontstaan. Zij merken dit doordat zij veel dorst krijgen en veel moeten plassen. Mensen met diabetes kunnen tijdens de behandeling meer insuline of glucoseverlagers nodig hebben. Meet extra vaak uw bloedglucose.', 0, 130);
 
 -- --------------------------------------------------------
@@ -91,7 +91,8 @@ CREATE TABLE `patienten` (
 --
 
 INSERT INTO `patienten` (`id`, `naam`, `geboortedatum`, `adres`, `email`, `telefoonummer`, `verzekeringsnummer`, `aandoeningen`) VALUES
-(1, 'Xavier', '1999-01-19', 'denhaag', 'hh@gmail.com', 612580, 3123123, NULL);
+(1, 'Xavier', '1999-01-20', 'denhaag', 'hh@gmail.com', 612580, 3123123, NULL),
+(2, 'Jordi', '2002-04-11', 'hagland123', 'jordi@email.com', 61234567, 12312312, 'alcohol vrij');
 
 -- --------------------------------------------------------
 
@@ -112,7 +113,8 @@ CREATE TABLE `recepten` (
 --
 
 INSERT INTO `recepten` (`id`, `medicijn_id`, `datum`, `periode`, `patient_id`) VALUES
-(1, 2, '2016-01-01', '2 keer per week', 1);
+(1, 2, '2016-01-01', '2 keer per week', 1),
+(5, 1, '2021-01-24', '2 keer per week', 2);
 
 -- --------------------------------------------------------
 
@@ -133,8 +135,8 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`id`, `username`, `roles`, `password`) VALUES
 (1, 'medewerker', '[\"ROLE_MEDEWERKER\"]', '$argon2id$v=19$m=65536,t=4,p=1$eWtGeXNwb2w3L1ZaTTc2MA$zStfANJJ5c9WflIpcWZsoLvHFon1DFyve//EyZ56AlU'),
-(3, 'Doctor', '[\"ROLE_DOCTOR\"]', '$argon2id$v=19$m=65536,t=4,p=1$eWtGeXNwb2w3L1ZaTTc2MA$zStfANJJ5c9WflIpcWZsoLvHFon1DFyve//EyZ56AlU'),
-(4, 'admin', '[\"ROLE_ADMIN\"]', '$argon2id$v=19$m=65536,t=4,p=1$eWtGeXNwb2w3L1ZaTTc2MA$zStfANJJ5c9WflIpcWZsoLvHFon1DFyve//EyZ56AlU');
+(3, 'doctor', '[\"ROLE_DOCTOR\"]', '$argon2id$v=19$m=65536,t=4,p=1$eWtGeXNwb2w3L1ZaTTc2MA$zStfANJJ5c9WflIpcWZsoLvHFon1DFyve//EyZ56AlU'),
+(4, 'apotheker', '[\"ROLE_APOTHEKER\"]', '$argon2id$v=19$m=65536,t=4,p=1$eWtGeXNwb2w3L1ZaTTc2MA$zStfANJJ5c9WflIpcWZsoLvHFon1DFyve//EyZ56AlU');
 
 --
 -- Indexen voor geëxporteerde tabellen
@@ -187,13 +189,13 @@ ALTER TABLE `medicijnen`
 -- AUTO_INCREMENT voor een tabel `patienten`
 --
 ALTER TABLE `patienten`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT voor een tabel `recepten`
 --
 ALTER TABLE `recepten`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT voor een tabel `user`
