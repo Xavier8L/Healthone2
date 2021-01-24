@@ -21,6 +21,7 @@ class DoctorController extends AbstractController
     public function homepage()
     {
         return $this ->render('doctor/Dhome.html.twig');
+//        password:qwe123
     }
 
     /**

@@ -1,0 +1,76 @@
+{% extends 'medewerker/Mhome.html.twig' %}
+
+{% block body %}
+    <br />
+    <h1 class="text-info text-center">Patienten Lijst</h1>
+    <div class="container"><h2>Er zij {{ patienten|length }} patienten</h2></div>
+
+
+    <div class="">
+
+    <table class="table table-bordered">
+
+        <thead class="text-center">
+        <tr>
+            <td class="thead">naam</td>
+            <td class="thead">geboortedatum</td>
+            <td class="thead">adres</td>
+            <td class="thead">email</td>
+            <td class="thead">telefoonummer</td>
+            <td class="thead">verzekeringsnummer</td>
+            <td class="thead">aandoeningen</td>
+            <td class="thead">Wijzigen</td>
+            <td class="thead">Verwijderen</td>
+        </tr>
+        </thead>
+        <tbody>
+        {% for patient in patienten %}
+            <tr class="text-center tr2">
+                <td>
+                    {{ patient.naam }}
+                </td>
+
+                <td>
+                    {{ patient.geboortedatum|date("d-M-Y") }}
+                </td>
+
+                <td>
+                    {{ patient.adres }}
+                </td>
+
+                <td>
+                    {{ patient.email }}
+                </td>
+
+                <td>
+                    {{ patient.telefoonummer }}
+                </td>
+
+                <td>
+                    {{ patient.verzekeringsnummer }}
+                </td>
+
+                <td>
+                    {{ patient.aandoeningen }}
+                </td>
+
+                <td title="bewerk de gegevens van deze patienten">
+                    <a href="{{ path('updateP',{'id':patient.id}) }}"><span class="far fa-pen text-info " style="font-size: 50px" ></span></a>
+                </td>
+
+                <td title="bewerk de gegevens van deze patienten">
+                    <a href="{{ path('deletP', {'id':patient.id}) }}"><span class="far fa-trash-alt text-danger " style="font-size: 50px" ></span></a>
+                </td>
+
+            </tr>
+        {% endfor %}
+
+        </tbody>
+
+    </table>
+        <a href="{{ path("creatP") }}"  ><button class="btn btn-outline-warning  "><span class="far fa-plus text-warning " style="font-size: 50px"></span></button></a>
+    </div>
+    <br/>
+
+
+{% endblock %}

@@ -16,19 +16,21 @@ class ReceptType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('datum',DateType::class,
-                ['widget'=>'single_text'])
-            ->add('periode')
-            ->add('medicijn', EntityType::class,
-            [
-                'class' => Medicijnen::class,
-                'choice_label' => 'naam'
-                ])
             ->add('patient',EntityType::class,
                 [
                     'class' => Patienten::class,
                     'choice_label' => 'naam'
                 ])
+            ->add('medicijn', EntityType::class,
+                [
+                    'class' => Medicijnen::class,
+                    'choice_label' => 'naam'
+                ])
+            ->add('datum',DateType::class,
+                ['widget'=>'single_text'])
+            ->add('periode')
+
+
 
         ;
     }

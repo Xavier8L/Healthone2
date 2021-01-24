@@ -1,0 +1,15 @@
+{% extends 'medewerker/Mhome.html.twig' %}
+
+{% block body %}
+    {% block content_title %}
+
+        {% endblock %}
+    <div class="form1">
+        {{ form_start(PatientenForm) }}
+        {{ form_widget(PatientenForm) }}
+        {% block content_body %}
+
+        {%  endblock %}
+        {{ form_end(PatientenForm) }}
+    </div>
+{% endblock %}

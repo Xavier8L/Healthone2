@@ -9,20 +9,17 @@
 {% endblock %}
 
 {% block a %}
-    <a class="navbar-brand" href="{{ path("Mhomepage") }}"><i class="fas fa-home" style="font-size: 50px"></i></a>
+    <a class="navbar-brand" href="{{ path("Dhomepage") }}"><i class="fas fa-home" style="font-size: 50px"></i></a>
 {% endblock %}
 {% block li %}
     <li class="nav-item">
-        <a class="nav-link" href="{{ path("medewerkermtable") }}">Medicijnen</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="{{ path("medewerkerptable") }}">Patienten</a>
+        <a class="nav-link" href="{{ path("Rtable") }}">Recepten</a>
     </li>
 {% endblock %}
 {% block body %}
 
     <div class="text-center infomatie">
       <p class="text-info"> HealthOne</p>
-        <p class="text-warning">Welkom Medewerker</p>
+        <p class="text-warning">Welkom Apotheker</p>
     </div>
 {% endblock %}

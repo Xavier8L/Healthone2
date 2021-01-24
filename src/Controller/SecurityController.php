@@ -14,6 +14,8 @@ class SecurityController extends AbstractController
      */
     public function login(AuthenticationUtils $authenticationUtils): Response
     {
+        //    Alles account password zijn: qwe123
+
         // if ($this->getUser()) {
         //     return $this->redirectToRoute('target_path');
         // }

@@ -20,17 +20,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff7d3df1-a52c-4103-99dd-bda82c4ce6d7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/getRoleNames" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/ApothekerController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/PatientenType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/apotheker/Ahome.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/apotheker/ReceptTable.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/medewerker/Pcreate.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/medewerker/Pform.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/medewerker/Pwijzigen.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/medewerker/patientenlijst.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/healthone2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/healthone2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Recepten.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Recepten.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AdminController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/DoctorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DoctorController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MedewerkerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MedewerkerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Form/ReceptType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ReceptType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/bezoeker/medicijnen.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bezoeker/medicijnen.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/index.html.twig" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/doctor/Dhome.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/doctor/Dhome.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/doctor/Dwijzigen.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/doctor/Dwijzigen.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/doctor/doctorCreate.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/doctor/doctorCreate.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/doctor/doctorMtable.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/doctor/doctorMtable.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/medewerker/Mhome.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/medewerker/Mhome.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/medewerker/medicijnenlijst.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/medewerker/medicijnenlijst.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/medewerker/wijzigen.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/medewerker/Mwijzigen.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +163,6 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/persistence" />
       <path value="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/web-server-bundle" />
-      <path value="$PROJECT_DIR$/vendor/symfony/orm-pack" />
     </include_path>
   </component>
   <component name="ProjectId" id="1lSbh35nveAfM7GZFKQmC7qdOTN" />
@@ -159,25 +174,25 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/medewerker" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/apotheker" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sheng\Documents\Xampp\htdocs\healthone2\templates\apotheker" />
+      <recent name="C:\Users\sheng\Documents\Xampp\htdocs\healthone2\templates" />
+      <recent name="C:\Users\sheng\Documents\Xampp\htdocs\healthone2\src\Controller" />
+      <recent name="C:\Users\sheng\Documents\Xampp\htdocs\healthone2\templates\medewerker" />
+      <recent name="C:\Users\sheng\Documents\Xampp\htdocs\healthone2\templates\doctor" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\sheng\Documents\Xampp\htdocs\healthone2\templates\medewerker" />
       <recent name="C:\Users\sheng\Documents\Xampp\htdocs\healthone2\templates" />
       <recent name="C:\Users\sheng\Documents\Xampp\htdocs\healthone2\public" />
       <recent name="C:\Users\sheng\Documents\Xampp\htdocs\healthone2\templates\verzeker" />
       <recent name="C:\Users\sheng\Documents\Xampp\htdocs\healthone2\src\Controller" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\sheng\Documents\Xampp\htdocs\healthone2\templates\medewerker" />
-      <recent name="C:\Users\sheng\Documents\Xampp\htdocs\healthone2\templates\doctor" />
-      <recent name="C:\Users\sheng\Documents\Xampp\htdocs\healthone2\templates\bezoeker" />
-      <recent name="C:\Users\sheng\Documents\Xampp\htdocs\healthone2\templates\img" />
-      <recent name="C:\Users\sheng\Documents\Xampp\htdocs\healthone2\templates" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -204,6 +219,8 @@
       <workItem from="1610959251581" duration="11051000" />
       <workItem from="1611218127784" duration="8469000" />
       <workItem from="1611226798207" duration="83000" />
+      <workItem from="1611341810602" duration="1173000" />
+      <workItem from="1611502570899" duration="4992000" />
     </task>
     <servers />
   </component>

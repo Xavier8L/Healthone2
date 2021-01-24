@@ -3,7 +3,9 @@
 namespace App\Controller;
 
 use App\Entity\Medicijnen;
+use App\Entity\Patienten;
 use App\Form\MedicijnType;
+use App\Form\PatientenType;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
@@ -20,6 +22,7 @@ class MedewerkerController extends AbstractController
     public function homepage()
     {
         return $this ->render('medewerker/Mhome.html.twig');
+//        password:qwe123
     }
 
 
@@ -74,7 +77,7 @@ class MedewerkerController extends AbstractController
             return $this->redirectToRoute("medewerkermtable");
         }
 
-        return $this->render('medewerker/wijzigen.html.twig',['MedicijnForm'=>$form->createView()]);
+        return $this->render('medewerker/Mwijzigen.html.twig',['MedicijnForm'=>$form->createView()]);
 
     }
 
@@ -92,5 +95,78 @@ class MedewerkerController extends AbstractController
 
 
         return $this->redirectToRoute("medewerkermtable");
+    }
+
+
+    /**
+     * @Route("/medewerker/patienten", name="medewerkerptable")
+     */
+
+    public function PatientenTable()
+    {
+        $repository =$this->getDoctrine()->getRepository(Patienten::class);
+        $patient =$repository->findAll();
+        return $this->render('medewerker/patientenlijst.html.twig',['patienten'=> $patient]);
+    }
+
+    /**
+     * @Route("/medewerker/creatP", name="creatP")
+     */
+    public function Pcreat(EntityManagerInterface $em, Request $request)
+    {
+        $patient = new Patienten();
+        $form = $this->createForm(PatientenType::class, $patient);
+        $form->handleRequest($request);
+        if($form->isSubmitted()&&$form->isValid())
+        {
+            $em =$this->getDoctrine()->getManager();
+            $em->persist($patient);
+            $em->flush();
+
+            $this->addFlash('success',"Patient is gemaakt");
+
+            return $this->redirectToRoute("medewerkerptable");
+        }
+
+        return $this->render('medewerker/Pcreate.html.twig',['PatientenForm'=>$form->createView()]);
+    }
+
+    /**
+     * @Route("medewerker/updateP/{id}", name="updateP")
+     */
+    public function updateP($id, Request $request)
+    {
+        $medicijn=$this->getDoctrine()->getRepository(Patienten::class)->find($id);
+        $form = $this->createForm(PatientenType::class, $medicijn);
+        $form->handleRequest($request);
+        if($form->isSubmitted()&&$form->isValid())
+        {
+            $em =$this->getDoctrine()->getManager();
+            $em->persist($medicijn);
+            $em->flush();
+
+            $this->addFlash('success',"Patient is update");
+
+            return $this->redirectToRoute("medewerkerptable");
+        }
+
+        return $this->render('medewerker/Pwijzigen.html.twig',['PatientenForm'=>$form->createView()]);
+
+    }
+
+    /**
+     * @Route("medewerker/deletP/{id}", name="deletP")
+     */
+    public function deleteP($id)
+    {
+        $em=$this->getDoctrine()->getManager();
+        $patient=$this->getDoctrine()->getRepository(Patienten::class)->find($id);
+        $em->remove($patient);
+        $em->flush();
+
+        $this->addFlash('danger',"Patient is verwijden");
+
+
+        return $this->redirectToRoute("medewerkerptable");
     }
 }

@@ -4,23 +4,6 @@
 {% block body %}
     <h1 class="text-info text-center">Recepten Lijst</h1>
 
-    {% for message in app.flashes('success') %}
-
-        <dib class="alert alert-success">
-            {{ message }}
-        </dib>
-
-
-    {% endfor %}
-
-
-    {% for message in app.flashes('danger') %}
-        <dis class="alert alert-danger">
-            {{ message }}
-        </dis>
-
-
-    {% endfor %}
     <br />
     <div class="container">
     <table class="table table-bordered">
@@ -32,8 +15,6 @@
             <td class="thead">datum</td>
             <td class="thead">periode</td>
             <td class="thead">verzekerd</td>
-            <td class="thead">Wijzigen</td>
-            <td class="thead">Verwijderen</td>
         </tr>
         </thead>
         <tbody>
@@ -64,13 +45,7 @@
                     {% endif %}
                 </td>
 
-                <td title="bewerk de gegevens van deze medicijn">
-                    <a href="{{ path('updateDM',{'id':recept.id}) }}"><span class="far fa-pen text-info " style="font-size: 50px" ></span></a>
-                </td>
 
-                <td title="bewerk de gegevens van deze medicijn">
-                    <a href="{{ path('deletDM', {'id':recept.id}) }}"><span class="far fa-trash-alt text-danger " style="font-size: 50px"></span></a>
-                </td>
 
             </tr>
         {% endfor %}
@@ -78,6 +53,5 @@
         </tbody>
 
     </table>
-        <a href="{{ path("creatDM") }}"  ><button class="btn btn-outline-warning  "><span class="far fa-plus text-warning " style="font-size: 50px"></span></button></a>
     </div>
 {% endblock %}
