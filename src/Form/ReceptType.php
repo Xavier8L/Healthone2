@@ -27,7 +27,10 @@ class ReceptType extends AbstractType
                     'choice_label' => 'naam'
                 ])
             ->add('datum',DateType::class,
-                ['widget'=>'single_text'])
+                [
+                    'widget'=>'single_text',
+                    'format' => 'y'
+                ])
             ->add('periode')
 
 

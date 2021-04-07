@@ -20,33 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff7d3df1-a52c-4103-99dd-bda82c4ce6d7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/getRoleNames" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/ApothekerController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/PatientenType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/apotheker/Ahome.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/apotheker/ReceptTable.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/medewerker/Pcreate.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/medewerker/Pform.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/medewerker/Pwijzigen.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/medewerker/patientenlijst.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/healthone2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/healthone2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/AirportController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/BookingController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Text.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/TextRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/airport/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/booking/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AdminController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/DoctorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DoctorController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/MedewerkerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MedewerkerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20201214101520.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210104100807.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210104102407.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210104102557.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210111111436.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210118091854.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210121103903.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Form/ReceptType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ReceptType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/index.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/doctor/Dhome.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/doctor/Dhome.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/doctor/doctorMtable.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/doctor/doctorMtable.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/medewerker/Mhome.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/medewerker/Mhome.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/medewerker/wijzigen.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/medewerker/Mwijzigen.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,15 +110,12 @@
       <path value="$PROJECT_DIR$/vendor/symfony/asset" />
       <path value="$PROJECT_DIR$/vendor/symfony/routing" />
       <path value="$PROJECT_DIR$/vendor/symfony/config" />
-      <path value="$PROJECT_DIR$/vendor/symfony/stopwatch" />
-      <path value="$PROJECT_DIR$/vendor/webimpress/safe-writer" />
       <path value="$PROJECT_DIR$/vendor/symfony/http-client" />
       <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
       <path value="$PROJECT_DIR$/vendor/symfony/cache-contracts" />
       <path value="$PROJECT_DIR$/vendor/symfony/monolog-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
-      <path value="$PROJECT_DIR$/vendor/symfony/flex" />
       <path value="$PROJECT_DIR$/vendor/symfony/finder" />
       <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
       <path value="$PROJECT_DIR$/vendor/symfony/web-profiler-bundle" />
@@ -158,11 +145,14 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/migrations" />
       <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
       <path value="$PROJECT_DIR$/vendor/doctrine/orm" />
-      <path value="$PROJECT_DIR$/vendor/ocramius/proxy-manager" />
       <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
       <path value="$PROJECT_DIR$/vendor/doctrine/persistence" />
       <path value="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/web-server-bundle" />
+      <path value="$PROJECT_DIR$/vendor/friendsofphp/proxy-manager-lts" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/vendor/symfony/flex" />
+      <path value="$PROJECT_DIR$/vendor/symfony/stopwatch" />
     </include_path>
   </component>
   <component name="ProjectId" id="1lSbh35nveAfM7GZFKQmC7qdOTN" />
@@ -174,18 +164,18 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/apotheker" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sheng\Documents\Xampp\htdocs\healthone2\sql" />
       <recent name="C:\Users\sheng\Documents\Xampp\htdocs\healthone2\templates\apotheker" />
       <recent name="C:\Users\sheng\Documents\Xampp\htdocs\healthone2\templates" />
       <recent name="C:\Users\sheng\Documents\Xampp\htdocs\healthone2\src\Controller" />
       <recent name="C:\Users\sheng\Documents\Xampp\htdocs\healthone2\templates\medewerker" />
-      <recent name="C:\Users\sheng\Documents\Xampp\htdocs\healthone2\templates\doctor" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\sheng\Documents\Xampp\htdocs\healthone2\templates\medewerker" />
@@ -220,7 +210,41 @@
       <workItem from="1611218127784" duration="8469000" />
       <workItem from="1611226798207" duration="83000" />
       <workItem from="1611341810602" duration="1173000" />
-      <workItem from="1611502570899" duration="4992000" />
+      <workItem from="1611502570899" duration="5360000" />
+      <workItem from="1611563657535" duration="1797000" />
+      <workItem from="1611570002096" duration="1241000" />
+      <workItem from="1611827534904" duration="1051000" />
+      <workItem from="1612180683077" duration="2116000" />
+      <workItem from="1612428049071" duration="8412000" />
+      <workItem from="1612438667822" duration="268000" />
+      <workItem from="1613119442892" duration="3008000" />
+      <workItem from="1613136853905" duration="3230000" />
+      <workItem from="1613396551621" duration="936000" />
+      <workItem from="1613398019906" duration="452000" />
+      <workItem from="1613401154339" duration="8385000" />
+      <workItem from="1613513169924" duration="48000" />
+      <workItem from="1613514543728" duration="624000" />
+      <workItem from="1614586124064" duration="657000" />
+      <workItem from="1614587143876" duration="9000" />
+      <workItem from="1614588906766" duration="246000" />
+      <workItem from="1614589663175" duration="14000" />
+      <workItem from="1614591454762" duration="4053000" />
+      <workItem from="1614595692921" duration="5000" />
+      <workItem from="1614596224620" duration="37000" />
+      <workItem from="1614596504815" duration="2347000" />
+      <workItem from="1614601858885" duration="1119000" />
+      <workItem from="1614855527797" duration="988000" />
+      <workItem from="1614869591377" duration="1436000" />
+      <workItem from="1614871061787" duration="400000" />
+      <workItem from="1614933195241" duration="8237000" />
+      <workItem from="1615199302387" duration="7777000" />
+      <workItem from="1615377796985" duration="2580000" />
+      <workItem from="1615450149108" duration="156000" />
+      <workItem from="1615456466716" duration="1402000" />
+      <workItem from="1615562548128" duration="607000" />
+      <workItem from="1617693541807" duration="237000" />
+      <workItem from="1617796708319" duration="621000" />
+      <workItem from="1617804130125" duration="343000" />
     </task>
     <servers />
   </component>
@@ -248,10 +272,12 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="661" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610569858892" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1610289374535">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1617797332748">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1610289374535" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1617797332748" />
+    <state x="2660" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1617693779168" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1613513216791" />
     <state x="648" y="240" key="NewPhpClassDialog" timestamp="1610364627945">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -260,10 +286,6 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="776" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610364859825" />
-    <state x="365" y="173" key="SettingsEditor" timestamp="1607946412133">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="365" y="173" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607946412133" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1610973298331">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
